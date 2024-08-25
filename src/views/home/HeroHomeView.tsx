@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import { FaFacebook, FaInstagram, FaReddit, FaTwitter } from 'react-icons/fa';
 
+import { useTypeTranslation } from '@/hooks';
 import { BasicView } from '@/components';
 import images from '@/assets/home';
 
@@ -15,6 +16,8 @@ const Background = () => (
 */
 
 export const HeroHomeView = () => {
+  const tt = useTypeTranslation();
+
   return (
     <BasicView>
       <div className='flex flex-col-reverse items-center bg-green-500/0 py-4 sm:flex-row'>
@@ -25,15 +28,10 @@ export const HeroHomeView = () => {
           />
         </div>
         <div className='flex flex-grow flex-col items-center gap-3 bg-red-600/0 p-4'>
-          <h1 className='text-3xl font-extrabold'>THIS IS THE HERO</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            voluptate magnam quam, quas repudiandae commodi vel. Officia amet
-            sunt id maxime ad consequatur magnam quisquam voluptatem eligendi
-            dolore! Hic, reiciendis?
-          </p>
+          <h1 className='text-3xl font-extrabold'>{tt('home.hero.title')}</h1>
+          <p>{tt('home.hero.content')}</p>
           <div className='flex w-full flex-col gap-2'>
-            <p className='text-start font-bold'>Check my Social Medias</p>
+            <p className='text-start font-bold'>{tt('home.hero.check')}</p>
             <div className='flex flex-wrap gap-4'>
               <FaFacebook size={24} />
               <FaTwitter size={24} />
