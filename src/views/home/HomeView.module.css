@@ -1,0 +1,35 @@
+/* .Background {
+  position: absolute;
+  z-index: -1;
+
+  background-image: url(https://img.freepik.com/free-photo/reflection-lights-mountain-lake-captured-parco-ciani-lugano-switzerland_181624-24209.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  aspect-ratio: 720/493;
+  width: 100%;
+}
+ */
+
+.Hero {
+  filter: drop-shadow(0px 0px 5px #10a9);
+  animation: ease-in-out 5s anim-hero-floating infinite;
+}
+
+@keyframes anim-hero-floating {
+  0% {
+    transform: translateY(0px) rotate(2.5deg);
+  }
+  25% {
+    transform: translateY(2.5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(-2.5deg);
+  }
+  75% {
+    transform: translateY(-2.5px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(2.5deg);
+  }
+}

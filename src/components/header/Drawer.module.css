@@ -1,0 +1,9 @@
+.Drawer {
+  transform: translateX(-100%);
+  transition: 100ms;
+  transition-timing-function: cubic-bezier(0.49, 1.83, 0, 0.74);
+}
+
+.Active_Drawer {
+  transform: translateX(0);
+}

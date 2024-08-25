@@ -1,0 +1,9 @@
+.NavLinkList {
+  scale: 1 0;
+  transition: scale 100ms;
+  transition-timing-function: cubic-bezier(0.49, 1.83, 0, 0.74);
+}
+
+.Active_NavLinkList {
+  scale: 1 1;
+}
